@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Main content of the portfolio -->
+    <header role="banner">
+        <h1 role="heading">My Accessible Portfolio</h1>
+    </header>
 
+    <!-- Navigation Section -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Section -->
+    <section>
+        <h2 role="heading" id="about">About Me</h2>
+        <img src="profile.jpg" alt="A portrait of me" role="img" />
+        <p>
+            Hi! I'm a web developer with a passion for creating accessible and user-friendly websites. I have experience
+            in front-end development and am always learning new things in the tech industry.
+        </p>
+    </section>
+
+    <!-- List of Projects -->
+    <section id="projects">
+        <h2 role="heading">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web Design</li>
+            <li role="listitem">Project 2: Interactive JavaScript App</li>
+            <li role="listitem">Project 3: Portfolio Website</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 role="heading">Contact Me</h2>
+        <p>Email me at: <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <p>&copy; 2024 My Accessible Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
